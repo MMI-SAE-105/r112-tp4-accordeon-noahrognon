@@ -35,6 +35,3 @@ details>div {
     padding-left: 130px;
 }
 
-details[open]>div {
-    flex: 0 0 200px;
-}
