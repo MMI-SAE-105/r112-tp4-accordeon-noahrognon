@@ -1,14 +1,15 @@
-
 const accordeon = document.querySelector(".accordeon");
 
-
-accordeon.querySelectorAll("summary").forEach((summary) => {
-    summary.addEventListener("click", (event) => {
-        const details = event.target.closest("details");
-        accordeon.querySelectorAll("details").forEach((det) => {
-            if (det !== details) {
-                det.open = false;
-            }
-        });
+// Add click event to all details elements
+accordeon.querySelectorAll("details").forEach((details) => {
+    details.addEventListener("toggle", () => {
+        if (details.open) {
+            // Close all other details
+            accordeon.querySelectorAll("details").forEach((other) => {
+                if (other !== details) {
+                    other.open = false;
+                }
+            });
+        }
     });
 });

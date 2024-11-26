@@ -4,33 +4,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test Accordéon</title>
+  <title>Accordéon Volet avec Triangle</title>
   <link rel="stylesheet" href="/src/css/components/accordeon.css">
   <script type="module" src="/src/js/script.js"></script>
 </head>
 
 <body>
-  <h1>Test Accordéon</h1>
+  <h1>Test Accordéon avec Triangle</h1>
   <div class="accordeon">
-    <details open>
-      <summary><img src="/assets/img/moodle.univ-fcomte.fr.jpeg" alt=""></summary>
-      <div>
-        <h3>Moodle</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+    <details>
+      <summary>
+        <img src="/assets/img/moodle.univ-fcomte.fr.jpeg" alt="Moodle">
+        <div class="triangle"></div>
+      </summary>
+      <div class="contenu">
+        <h3>Le DUT des métiers du web</h3>
+        <p>Département SRC de Montbéliard</p>
       </div>
     </details>
     <details>
-      <summary><img src="/assets/img/pracht.org.jpeg" alt=""></summary>
-      <div>
+      <summary>
+        <img src="/assets/img/pracht.org.jpeg" alt="Pracht.ORG">
+        <div class="triangle"></div>
+      </summary>
+      <div class="contenu">
         <h3>Pracht.ORG</h3>
         <p>Ad aut esse est excepturi obcaecati similique.</p>
       </div>
     </details>
     <details>
-      <summary><img src="/assets/img/src-media.com.jpeg" alt=""></summary>
-      <div>
-        <h3>SRC Média</h3>
-        <p>Commodi inventore ipsa itaque placeat, ullam voluptatibus.</p>
+      <summary>
+        <img src="/assets/img/src-media.com.jpeg" alt="Pracht.ORG">
+        <div class="triangle"></div>
+      </summary>
+      <div class="contenu">
+        <h3>Xavier Senente</h3>
+        <p>Site web de xavier Senente</p>
       </div>
     </details>
   </div>
